@@ -5,6 +5,9 @@
 #include "../agente/Agente.h"
 #include <vector>
 
+
+//Pero si logré copiar todo lo que Alitet llegó a decirles a los del otro equipo en caso de que necesitemos al Agente de una vez
+
 struct Kinematic
 {
 	Vector2 position;
