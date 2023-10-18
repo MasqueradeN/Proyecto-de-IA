@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="agente">
+      <UniqueIdentifier>{b1fc65ac-0b6d-492e-b633-7a8b6ec1b68a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core">
+      <UniqueIdentifier>{e2d462ff-0a5f-4d39-a6d8-b763556078b5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="entorno">
+      <UniqueIdentifier>{2e26394a-f4a2-4dda-a561-5c23cd1de3e7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="enemigo">
+      <UniqueIdentifier>{4ea49d8e-a69c-4b1e-b1df-3d0658b69394}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="core\main.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="agente\Agente.cpp">
+      <Filter>agente</Filter>
+    </ClCompile>
+    <ClCompile Include="entorno\Barrera.cpp">
+      <Filter>entorno</Filter>
+    </ClCompile>
+    <ClCompile Include="entorno\EntornoMgr.cpp">
+      <Filter>entorno</Filter>
+    </ClCompile>
+    <ClCompile Include="entorno\Grid.cpp">
+      <Filter>entorno</Filter>
+    </ClCompile>
+    <ClCompile Include="enemigo\Enemigo.cpp">
+      <Filter>enemigo</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="agente\Agente.h">
+      <Filter>agente</Filter>
+    </ClInclude>
+    <ClInclude Include="entorno\Barrera.h">
+      <Filter>entorno</Filter>
+    </ClInclude>
+    <ClInclude Include="entorno\EntornoMgr.h">
+      <Filter>entorno</Filter>
+    </ClInclude>
+    <ClInclude Include="entorno\Grid.h">
+      <Filter>entorno</Filter>
+    </ClInclude>
+    <ClInclude Include="enemigo\Enemigo.h">
+      <Filter>enemigo</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
