@@ -4,7 +4,7 @@
 #include "../entorno/EntornoMgr.h"
 //#include <cmath>
 
-enum class turn
+enum class turn //enum para saber que turno es actualmente
 {
 	NONE,
 	AGENT,
@@ -22,6 +22,7 @@ int main(void)
 
 	Grid::Initialize(screenWidth, screenHeight);
 
+	//iniciar agente y bordes
 	Agente ahemte;
 	EntornoMgr entomgr;
 	float accTime = 0.f;
@@ -32,7 +33,7 @@ int main(void)
 	VectorInt2 mpos = entomgr.AddEscena01();
 	ahemte.SetPosition(mpos.x, mpos.y);
 
-	ahemte.SetTarget(80, 40);
+	ahemte.SetTarget(80, 40); //a donde irá el agente
 	
 	while (!WindowShouldClose()) 
 	{
@@ -41,6 +42,8 @@ int main(void)
 		// Update
 		ahemte.Update(elapsedTime);
 		accTime += elapsedTime;
+
+		//Maquina de estados es un switch case
 
 		switch (pstate)
 		{
@@ -57,7 +60,7 @@ int main(void)
 			}
 			break;
 		case turn::ENEMY:
-			ahemte.Update(elapsedTime);
+			//enemigo.Update(elapsedTime);   supongo que aqui irá nuestra parte después de completar al enemigo
 			if (accTime > 1.0f)
 			{
 				pstate = turn::AGENT;
